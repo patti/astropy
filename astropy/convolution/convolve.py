@@ -569,8 +569,8 @@ def convolve_fft(array, kernel, boundary='fill', fill_value=0, crop=True,
 
 def convolve_model(model, kernel):
     """
-    Convolve a model with another model. Returns a 
-    `astropy.modeling.CompoundModel` object.
+    Convolve a model with another model. Returns an 
+    ``astropy.modeling.CompoundModel`` instance. 
 
     Parameters
     ----------
@@ -585,13 +585,9 @@ def convolve_model(model, kernel):
 
     Returns
     -------
-    model : `astropy.model.CompoundModel`
+    model : astropy.modeling.CompoundModel
         Returns a CompoundModel instance that convolves``model`` and ``kernel`` 
         when evaluated.
-
-    Examples
-    --------
-
     """
 
     # Check model and kernel are Model instances

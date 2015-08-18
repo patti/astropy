@@ -277,7 +277,7 @@ The resulting object ``g1_plus_2`` is itself a new model.  Evaluating, say,
 
 This model can be further combined with other models in new expressions.  It is
 also possible to define entire new model *classes* using arithmetic expressions
-of other model classes.  This allows general compound models to be created
+of other model classes. This allows general compound models to be created
 without specifying any parameter values up front.  This more advanced usage is
 explained in more detail in the :ref:`compound model documentation
 <compound-model-classes>`.
@@ -315,6 +315,9 @@ are some complexities involved in correctly matching up the inputs and outputs
 of all models used to build a compound model.  You can learn more details in
 the :doc:`compound-models` documentation.
 
+Likewise, models can be convolved to form a new compound model using the 
+:func:`~astropy.convolution.convolve_model` function. See 
+:doc:`convolve-models` for examples.
 
 Using `astropy.modeling`
 ========================
@@ -326,6 +329,7 @@ Using `astropy.modeling`
    parameters
    fitting
    compound-models
+   convolve-models
    new
    bounding-boxes
    algorithms
